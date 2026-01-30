@@ -14,38 +14,35 @@ export const AWARDS_NOMINATION_2025: AwardCategory[] = [
     {
         title: "Organizational Unit (OU) Awards",
         awards: [
-            { name: "Outstanding Student Branch Award", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.d7bg5ya4iv4h" },
-            { name: "Emerging Student Branch Award", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.d7bg5ya4iv4h" },
-            { name: "Outstanding Student Branch Chapter Award", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.d7bg5ya4iv4h" },
-            { name: "Emerging Student Branch Chapter Award", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.d7bg5ya4iv4h" },
-            { name: "Outstanding Student Branch Affinity Group Award", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.psk6eh2ft5x7" },
-            { name: "Emerging Student Branch Affinity Group Award", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.psk6eh2ft5x7" }
+            { name: "Outstanding Chapter Award (Sectional Category)", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.d7bg5ya4iv4h" },
+            { name: "Outstanding Affinity Group Award (Sectional Category)", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.psk6eh2ft5x7" }
         ]
     },
     {
         title: "Special Activities Awards",
         awards: [
-            { name: "Best Student Branch Project Award", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.i8wel1a10n0u" },
-            { name: "Best Student Branch Chapter Project Award", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.j7fow4141jpz" },
-            { name: "Best Student Branch Affinity Group Project Award", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.oqqv8nhgs4jb" },
-            { name: "Best Industry Collaborative Project Award", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.d949283q15d9" },
-            { name: "Best Humanitarian Project Award", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.i8wel1a10n0u" }
+            { name: "Best Sectional Project Award", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.i8wel1a10n0u" },
+            { name: "Best Affinity Group Project Award (Section AG Category)", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.oqqv8nhgs4jb" },
+            { name: "Best Technical Chapter Project Award (Section Chapter)", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.j7fow4141jpz" },
+            { name: "Best Industry Collaborative Project Award (Section OU Category)", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.d949283q15d9" }
         ]
     },
     {
         title: "Individual Volunteer Awards",
         awards: [
             { name: "Section Outstanding Volunteer Award (Student Category)", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.xbhwfp3jwc0z" },
+            { name: "Section Outstanding Volunteer Award (Member Category)", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.r69416sg846" },
+            { name: "Section Outstanding WIE Volunteer Award (Member Category)", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.kupgn7l9i0av" },
             { name: "Section Outstanding WIE Volunteer Award (Student Category)", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.wg0veaohj95" },
-            { name: "Section Outstanding Student Branch Counselor/Chapter Advisor/Affinity Group Advisor", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.oasxuyw1fs4n" },
             { name: "Section Outstanding Young Professionals Volunteer Award (Academician)", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.gcwwyyqr3fkn" },
-            { name: "Section Outstanding Young Professionals Volunteer Award (Industry Practitioner)", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.i4sly0fmilip" }
+            { name: "Section Outstanding Young Professionals Volunteer Award (Industry Practitioner)", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.i4sly0fmilip" },
+            { name: "Section Outstanding Student Branch Counselor/Chapter Advisor/ WIE Affinity Group Advisor Award", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.oasxuyw1fs4n" }
         ]
     },
     {
         title: "External Recognition",
         awards: [
-            { name: "Outstanding Industry Partner Award", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.lvktg4oodage" }
+            { name: "Outstanding Industry Partner(s)", url: "https://docs.google.com/document/d/1O85JxsftmCCHXsPZg4lC8qzegTVTk4jN/edit#heading=h.lvktg4oodage" }
         ]
     }
 ];

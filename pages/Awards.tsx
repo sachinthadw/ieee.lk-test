@@ -26,7 +26,7 @@ export const Awards: React.FC = () => {
     };
 
     return (
-        <div className="min-h-screen bg-slate-50 dark:bg-slate-950">
+        <div className="min-h-screen">
             {/* Hero Section - Premium Gold/Dark Theme */}
             <section className="relative py-20 bg-slate-950 overflow-hidden">
                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?q=80&w=2940&auto=format&fit=crop')] bg-cover bg-center opacity-10"></div>
@@ -88,7 +88,7 @@ export const Awards: React.FC = () => {
                             <div className="space-y-24 animate-fade-in">
                                 {/* Guidelines Box - Premium Card */}
                                 <Reveal>
-                                    <div className="relative overflow-hidden bg-white dark:bg-slate-900 rounded-[2.5rem] p-10 md:p-16 border border-slate-200 dark:border-amber-500/20 shadow-2xl shadow-slate-200/50 dark:shadow-amber-900/20">
+                                    <div className="relative overflow-hidden bg-white/10 dark:bg-slate-900/30 rounded-[2.5rem] p-10 md:p-16 border border-slate-200 dark:border-amber-500/20 shadow-2xl shadow-slate-200/50 dark:shadow-amber-900/20 backdrop-blur-sm">
                                         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-gradient-to-br from-amber-200/20 to-yellow-500/20 rounded-full blur-3xl opacity-50"></div>
 
                                         <div className="relative grid md:grid-cols-2 gap-12 items-center">
@@ -155,7 +155,7 @@ export const Awards: React.FC = () => {
                                                         return (
                                                             <div
                                                                 key={i}
-                                                                className="relative group bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-amber-200 dark:hover:border-amber-500/30 shadow-sm hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 overflow-hidden"
+                                                                className="relative group bg-white/10 dark:bg-slate-900/20 backdrop-blur-sm p-8 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-amber-200 dark:hover:border-amber-500/30 shadow-sm hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 overflow-hidden"
                                                             >
                                                                 <div className="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity transform translate-x-4 group-hover:translate-x-0 duration-300">
                                                                     <Star className="text-amber-400 fill-current" size={24} />
@@ -171,11 +171,77 @@ export const Awards: React.FC = () => {
                                         </Reveal>
                                     ))}
                                 </div>
+
+                                <div className="grid md:grid-cols-2 gap-8">
+                                    <Reveal delay={200}>
+                                        <div className="h-full bg-white/10 dark:bg-slate-900/20 backdrop-blur-sm p-8 rounded-3xl border border-slate-200 dark:border-slate-800">
+                                            <h4 className="text-xl font-display font-bold text-slate-900 dark:text-white mb-4">Judging Committee</h4>
+                                            <p className="text-slate-600 dark:text-slate-400 mb-4">
+                                                The Judging Committee will include members from the IEEE Sri Lanka Section Executive Committee and prestigious IEEE Sri Lanka Section Volunteers. The decision of the judging committee shall be final and cannot be challenged.
+                                            </p>
+                                            <div className="inline-block px-4 py-2 bg-amber-500/10 rounded-lg border border-amber-500/20 text-amber-600 dark:text-amber-400 text-sm font-bold">
+                                                Judging Period: 10th - 31st Dec 2025
+                                            </div>
+                                        </div>
+                                    </Reveal>
+
+                                    <Reveal delay={300}>
+                                        <div className="h-full bg-white/10 dark:bg-slate-900/20 backdrop-blur-sm p-8 rounded-3xl border border-slate-200 dark:border-slate-800">
+                                            <h4 className="text-xl font-display font-bold text-slate-900 dark:text-white mb-4">Award Instrument</h4>
+                                            <p className="text-slate-600 dark:text-slate-400 mb-8">
+                                                A certificate & a token of appreciation will be presented to the winners of each category.
+                                            </p>
+                                            <h4 className="text-xl font-display font-bold text-slate-900 dark:text-white mb-4">Presentation</h4>
+                                            <p className="text-slate-600 dark:text-slate-400">
+                                                The awards will be presented at the IEEE Sri Lanka Section Annual General Meeting 2026 held in January 2026.
+                                            </p>
+                                        </div>
+                                    </Reveal>
+                                </div>
+
+                                <Reveal delay={400}>
+                                    <div className="bg-white/10 dark:bg-slate-900/20 backdrop-blur-sm p-8 rounded-3xl border border-slate-200 dark:border-slate-800">
+                                        <h4 className="text-xl font-display font-bold text-slate-900 dark:text-white mb-4">Publicity Rights & Record</h4>
+                                        <p className="text-slate-600 dark:text-slate-400 mb-4">
+                                            The Awards Committee will maintain a record of award recipients on the IEEE Sri Lanka Section website.
+                                        </p>
+                                        <p className="text-slate-600 dark:text-slate-400 text-sm">
+                                            Information provided by the nominators for the IEEE Sri Lanka Section awards may be used for promotional and/or publicity purposes on IEEE websites, Facebook, Twitter & other social media handles, printed materials and press releases etc. By submitting a nomination, nominators and nominees agree to the release of submitted information.
+                                        </p>
+                                    </div>
+                                </Reveal>
+
+                                <Reveal delay={500}>
+                                    <div className="bg-slate-900 dark:bg-slate-950 p-10 rounded-[2.5rem] border border-slate-800 relative overflow-hidden text-center">
+                                        <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
+                                        <div className="relative z-10">
+                                            <h3 className="text-2xl font-display font-bold text-white mb-8">Questions? Contact Us</h3>
+                                            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                                                <div>
+                                                    <p className="text-amber-500 font-bold text-sm uppercase tracking-wider mb-1">Chair</p>
+                                                    <p className="text-white font-bold">Mr. Dhammika Marasinghe</p>
+                                                </div>
+                                                <div>
+                                                    <p className="text-amber-500 font-bold text-sm uppercase tracking-wider mb-1">Member</p>
+                                                    <p className="text-white font-bold">Prof. Lasith Gunawardena</p>
+                                                </div>
+                                                <div>
+                                                    <p className="text-amber-500 font-bold text-sm uppercase tracking-wider mb-1">Student Activities Chair</p>
+                                                    <p className="text-white font-bold">Manodya Nabadawewa</p>
+                                                </div>
+                                                <div>
+                                                    <p className="text-amber-500 font-bold text-sm uppercase tracking-wider mb-1">SAC Vice-Chair (AR)</p>
+                                                    <p className="text-white font-bold">Amirah Rasmin</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Reveal>
                             </div>
                         ) : (
                             // HALL OF FAME VIEW
                             <div className="space-y-16 animate-fade-in">
-                                <div className="flex flex-col md:flex-row justify-between items-center bg-slate-900 text-white rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
+                                <div className="flex flex-col md:flex-row justify-between items-center bg-slate-900/90 backdrop-blur-sm text-white rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
                                     <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
                                     <div className="absolute right-0 bottom-0 w-64 h-64 bg-amber-500 rounded-full blur-[100px] opacity-20"></div>
 
@@ -224,7 +290,7 @@ export const Awards: React.FC = () => {
                                                                 : award;
 
                                                             return (
-                                                                <div key={i} className="group relative bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-white/5 shadow-sm hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                                                                <div key={i} className="group relative bg-white/10 dark:bg-slate-900/20 backdrop-blur-sm p-8 rounded-2xl border border-slate-100 dark:border-white/5 shadow-sm hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 hover:-translate-y-1 overflow-hidden">
                                                                     <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-amber-300 to-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
                                                                     <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">

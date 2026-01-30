@@ -99,7 +99,7 @@ export const Membership: React.FC = () => {
             </section>
 
             {/* Membership Grades - Tabbed Interface */}
-            <section className="py-24 bg-slate-50 dark:bg-slate-900/50">
+            <section className="py-24">
                 <div className="max-w-7xl mx-auto px-6">
                     <Reveal>
                         <div className="mb-12 text-center">

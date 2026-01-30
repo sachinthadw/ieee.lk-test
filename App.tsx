@@ -14,6 +14,7 @@ import { Awards } from './pages/Awards';
 import { Membership } from './pages/Membership';
 import { Governance } from './pages/Governance';
 import { Policies } from './pages/Policies';
+import { Conferences } from './pages/Conferences';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -87,6 +88,12 @@ function App() {
 
           <Route path="/events" element={<PostList type="EVENT" posts={posts} title="Events" />} />
           <Route path="/events/:id" element={<PostDetail posts={posts} />} />
+
+          {/* Conferences - New Section */}
+          <Route path="/conferences" element={<Navigate to="/upcoming-conferences" replace />} />
+          <Route path="/conference-guidelines" element={<Conferences />} />
+          <Route path="/upcoming-conferences" element={<Conferences />} />
+          <Route path="/past-conferences" element={<Conferences />} />
 
           <Route path="/news" element={<PostList type="NEWS" posts={posts} title="News & Resources" />} />
           <Route path="/news/:id" element={<PostDetail posts={posts} />} />

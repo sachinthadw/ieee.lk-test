@@ -49,7 +49,7 @@ export const Governance: React.FC = () => {
     }
 
     return (
-        <div className="min-h-screen bg-slate-50 dark:bg-slate-950 pt-32 pb-20">
+        <div className="min-h-screen pt-32 pb-20">
             <div className="max-w-7xl mx-auto px-6">
 
                 {/* Header with Year Selector */}

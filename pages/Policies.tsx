@@ -11,7 +11,7 @@ export const Policies: React.FC = () => {
     };
 
     return (
-        <div className="min-h-screen bg-slate-50 dark:bg-slate-950 pt-32 pb-20">
+        <div className="min-h-screen pt-32 pb-20">
             <div className="max-w-4xl mx-auto px-6">
                 <Reveal>
                     <div className="text-center mb-16">
@@ -31,8 +31,8 @@ export const Policies: React.FC = () => {
                     {BYLAWS_DATA.map((item, idx) => (
                         <Reveal key={item.id} delay={idx * 50}>
                             <div className={`bg-white dark:bg-slate-900 rounded-2xl border transition-all duration-300 overflow-hidden ${openItem === item.id
-                                    ? 'border-ieee-blue/30 shadow-lg shadow-ieee-blue/5'
-                                    : 'border-slate-200 dark:border-white/5 hover:border-slate-300 dark:hover:border-white/10'
+                                ? 'border-ieee-blue/30 shadow-lg shadow-ieee-blue/5'
+                                : 'border-slate-200 dark:border-white/5 hover:border-slate-300 dark:hover:border-white/10'
                                 }`}>
                                 <button
                                     onClick={() => toggleItem(item.id)}

@@ -1,0 +1,98 @@
+.flip-book-container {
+  perspective: 1500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+  box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
+}
+
+.book:hover {
+  transform: rotateY(-30deg) translatex(20px);
+}
+
+.book-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px 6px 6px 2px;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  z-index: 10;
+}
+
+.book:hover .book-cover {
+  transform: rotateY(-180deg);
+}
+
+.book-front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00629B; /* IEEE Blue */
+  background-size: cover;
+  background-position: center;
+  border-radius: 2px 6px 6px 2px;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.book-front::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    bottom: 0;
+    width: 3px;
+    background: rgba(0,0,0,0.1);
+}
+
+.book-page {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 290px;
+  height: 392px;
+  background: white;
+  border-radius: 2px 5px 5px 2px;
+  z-index: 5;
+  transform: translateZ(-2px);
+  box-shadow: inset 5px 0 10px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.book-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00629B;
+  border-radius: 2px 6px 6px 2px;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}

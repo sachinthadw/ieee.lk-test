@@ -69,6 +69,15 @@ export const Layout: React.FC<LayoutProps> = ({ children, theme, toggleTheme }) 
       ]
     },
     { id: '/membership', label: 'Membership' },
+    {
+      id: '/conferences',
+      label: 'Conferences',
+      children: [
+        { id: '/conference-guidelines', label: 'Guidelines' },
+        { id: '/upcoming-conferences', label: 'Upcoming Conferences' },
+        { id: '/past-conferences', label: 'Past Conferences' },
+      ]
+    },
     { id: '/events', label: 'Events' },
     {
       id: '/news',

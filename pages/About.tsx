@@ -15,7 +15,7 @@ export const About: React.FC = () => {
     // Navigation Items - ExCom moved to /governance
     const navItems = [
         { id: 'overview', label: 'Overview', icon: LayoutGrid },
-        { id: 'mission', label: 'Mission & Vision', icon: Target },
+        { id: 'mission-vision', label: 'Mission & Vision', icon: Target },
         { id: 'milestones', label: 'Milestones', icon: History },
         { id: 'contact', label: 'Contact Us', icon: Mail },
     ];
@@ -26,7 +26,7 @@ export const About: React.FC = () => {
     };
 
     return (
-        <div className="min-h-screen bg-slate-50 dark:bg-slate-950 pt-24 pb-20">
+        <div className="min-h-screen pt-24 pb-20">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="grid lg:grid-cols-12 gap-12">
 
@@ -104,7 +104,7 @@ export const About: React.FC = () => {
                             )}
 
                             {/* MISSION & VISION */}
-                            {activeSection === 'mission' && (
+                            {activeSection === 'mission-vision' && (
                                 <div className="grid gap-8">
                                     <Reveal>
                                         <div className="bg-white dark:bg-slate-900 p-10 rounded-[2rem] border border-slate-200 dark:border-white/5 shadow-xl relative overflow-hidden group">

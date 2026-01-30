@@ -1,9 +1,13 @@
 import { GoogleGenAI } from "@google/genai";
 
 // Initialize Gemini Client
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const apiKey = process.env.API_KEY;
+const ai = apiKey ? new GoogleGenAI({ apiKey }) : null;
 
 export const generatePostContent = async (title: string, promptInfo: string): Promise<string> => {
+  if (!ai) {
+    return "<p>AI generation unavailable (API Key missing).</p>";
+  }
   try {
     const prompt = `
       You are an expert content writer for the IEEE Sri Lanka Section website.
@@ -30,8 +34,9 @@ export const generatePostContent = async (title: string, promptInfo: string): Pr
 };
 
 export const suggestTags = async (content: string): Promise<string[]> => {
+  if (!ai) return ['IEEE', 'Tech'];
   try {
-     const response = await ai.models.generateContent({
+    const response = await ai.models.generateContent({
       model: 'gemini-3-flash-preview',
       contents: `Read the following text and suggest 3-5 short tags (one word usually). Return them as a comma-separated list. Text: ${content.substring(0, 500)}`,
     });
